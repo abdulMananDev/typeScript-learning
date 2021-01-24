@@ -1,4 +1,4 @@
-const button = document.querySelector("#btn");
+const button = document.querySelector("#btn")!;
 const input1 = document.querySelector("#num-1") as HTMLInputElement;
 const input2 = document.querySelector("#num-2") as HTMLInputElement;
 
@@ -120,8 +120,14 @@ function myCallbackFunction(
 
 myCallbackFunctionSlate = myCallbackFunction;
 
-console.log(
-  myCallbackFunctionSlate(1, 18, result => {
-    console.log(result);
-  })
-);
+console.log(myCallbackFunctionSlate(1, 18, result => console.log(result)));
+
+let x: string;
+let i: string;
+
+let y: any;
+let j: unknown;
+
+x = y;
+// i != j;
+console.log("Watching");
