@@ -86,4 +86,3 @@ let j;
 x = y;
 // i != j;
 console.log("Watching");
-//# sourceMappingURL=index.js.map
