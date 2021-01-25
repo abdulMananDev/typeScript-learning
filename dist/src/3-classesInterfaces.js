@@ -68,3 +68,63 @@ const cseDep = new Cse(["Asif Ali Banka Sir", "Mujtaba Sir"]);
 cseDep.setStaffinfo = 298;
 cseDep.logger();
 cseDep.logsStaff();
+// let myCountry:Monument
+class Country {
+    constructor(countryName, monName, est, owner, isPublic) {
+        this.countryName = countryName;
+        this.economyPrecentage = 0;
+        this.name = monName;
+        this.establishment = est;
+        this.ownedBy = owner;
+        this.publicPlace = isPublic;
+    }
+    get getEconomy() {
+        return this.economyPrecentage;
+    }
+    set setEconomy(econ) {
+        this.economyPrecentage = econ;
+    }
+    myRating(rating) {
+        console.log(`The Rating for ${this.name} is ${rating}/10`);
+    }
+}
+const India = new Country("India", "TajMahal", 1952, "Shah-Jahan", true);
+console.log(India);
+India.setEconomy = -9;
+let economy = India.getEconomy;
+console.log(economy);
+India.myRating(8.2);
+class Success {
+    constructor(pointer, skills) {
+        this.pointer = pointer;
+        this.skills = skills;
+    }
+    successCalculation() {
+        let rating = this.pointer * this.skills.length;
+        if (rating > 20)
+            console.log(`You are Great!!!!! with a rating of ${rating}`);
+        else
+            console.log(`You need to work hard as ${rating} is Low than the Standard `);
+    }
+}
+const Manan = new Success(5, [
+    "Exel",
+    "Word",
+    "Powerpoint",
+    "Communicaiton",
+    ""
+]);
+Manan.successCalculation();
+//usage
+let usingFunctionInteface;
+usingFunctionInteface = (n1, s1) => {
+    console.log(n1 + s1);
+};
+usingFunctionInteface(2, "k");
+let z;
+z = {
+    i: 56,
+    o: (buzz) => {
+        console.log(buzz);
+    }
+};
